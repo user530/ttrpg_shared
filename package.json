@@ -1,0 +1,20 @@
+{
+  "name": "ttrpg_shared",
+  "version": "1.0.0",
+  "description": "Helper package that contains shared data for the ttrpg_app",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ttrpg"
+  ],
+  "author": "TMV",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}
