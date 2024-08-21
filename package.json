@@ -1,8 +1,9 @@
 {
-  "name": "ttrpg_shared",
-  "version": "1.0.0",
+  "name": "@user530/ttrpg_shared",
+  "version": "1.0.1",
   "description": "Helper package that contains shared data for the ttrpg_app",
-  "main": "index.js",
+  "main": "dist/empty.js",
+  "types": "dist/empty.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,5 +17,20 @@
     "@types/node": "^20.14.10",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.3"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "exports": {
+    "./interfaces": "./dist/interfaces/index.js",
+    "./types": "./dist/types/index.js",
+    "./data/service_commands": "./dist/data/service_commands/index.js"
+  },
+  "typesVersions": {
+    "*": {
+    "interfaces": ["dist/interfaces/index.js"],
+    "types": ["dist/types/index.js"],
+    "data/service_commands": ["dist/data/service_commands/index.js"]
+    }
   }
 }
